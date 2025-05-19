@@ -1,0 +1,4 @@
+config.json
+GIT_WORKFLOW.md
+*.pyc
+__pycache__/
