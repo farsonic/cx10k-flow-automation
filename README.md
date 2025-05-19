@@ -1,6 +1,6 @@
 # CX10K Policy Automation & Flow Analysis Toolkit
 
-A collection of Python tools for Pensando CX10K/SONiC-style syslog, DC flow simulation, policy management, and security analytics—backed by Redis, with OpenAI GPT integration for flow analysis.
+A collection of Python tools for Pensando CX10K syslog, DC flow simulation, policy management, and security analytics—backed by Redis, with OpenAI GPT integration for flow analysis.
 
 ## Directory Contents
 
