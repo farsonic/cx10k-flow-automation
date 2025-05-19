@@ -122,7 +122,6 @@ python3 rule_manager.py add_rule --policy_name my_policy --rule_name web_to_db -
 
 ## Security Notes
 
-- **Never commit `config.json` or any secret keys to GitHub.**
 - Set `maxmemory` and `maxmemory-policy` in your Redis configuration for production.
 - Use a firewall and bind Redis to `127.0.0.1` (or use ACLs/tls).
 
@@ -131,6 +130,8 @@ python3 rule_manager.py add_rule --policy_name my_policy --rule_name web_to_db -
 ## Questions / Issues?
 
 Open a GitHub issue or contact the repo maintainer.
+
+This is a proof of concept and useful for demonstration purposes.
 
 ---
 
