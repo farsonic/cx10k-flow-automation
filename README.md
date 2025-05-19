@@ -22,7 +22,6 @@ A collection of Python tools for Pensando CX10K/SONiC-style syslog, DC flow simu
 
 - **config.json**
   Local configuration file (contains API keys, PSM host, credentials, and GPT model).
-  **Never commit this file to GitHub!**
 
 ---
 
@@ -39,7 +38,7 @@ A collection of Python tools for Pensando CX10K/SONiC-style syslog, DC flow simu
 
 ### 3. Prepare `config.json`
 
-Create a file called `config.json` in this directory (but **do NOT add it to git**; see below).
+Create a file called `config.json` in this directory
 
 **Example:**
 ```json
@@ -61,24 +60,12 @@ Create a file called `config.json` in this directory (but **do NOT add it to git
 - `openai_api_key`: Your OpenAI API key (required for GPT features)
 - `openai_model`: OpenAI model to use (`gpt-4o`, `gpt-4`, etc.)
 
-**Never commit your config.json or secrets to GitHub.**
-
-Add to `.gitignore`:
-```
-config.json
-```
 
 ---
 
 ## Usage
 
-### **1. Simulate and Send Flows**
-
-```sh
-python3 send_logs.py --host 127.0.0.1 --port 5514 --count 5000 --rate 50
-```
-
-### **2. Run Syslog Server**
+### **1. Run Syslog Server**
 
 ```sh
 python3 syslog_server.py
@@ -86,6 +73,12 @@ python3 syslog_server.py
 - Stores parsed session logs in Redis.
 - Handles IANA port mapping.
 - Supports TTL and offloading for old logs.
+
+### **2. Simulate and Send Flows**
+
+```sh
+python3 send_logs.py --host 127.0.0.1 --port 5514 --count 5000 --rate 50
+```
 
 ### **3. Build/Review DC Policy from Flows**
 
